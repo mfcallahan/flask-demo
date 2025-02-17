@@ -32,7 +32,7 @@ def checkArcPy():
         return jsonify(response)
         
     response = {
-        "message": f"arcpy.GetInstallInfo() output: {ver}"
+        "message": f'arcpy.GetInstallInfo()["Version"] output: {ver}'
     }
 
     return jsonify(response)
