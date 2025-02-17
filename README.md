@@ -71,7 +71,7 @@ This repository contains a sample Python Flask application which can also import
     - Click OK
 - Update the web.config file and add the following inside `<configuration> <system.webServer> <handlers>`:
     - `<add name="Python FastCGI" path="*" verb="*" modules="FastCgiModule" scriptProcessor="C:\inetpub\wwwroot\flask-demo\arcgispro-py3-flask-demo\python.exe|C:\inetpub\wwwroot\flask-demo\wfastcgi.py" resourceType="Unspecified" requireAccess="Script" />`
-- Add app to FasgCGI Server Settings:
+- Add app to FastCGI Server Settings:
     - IIS > UsAzW2dncW01 > FastCGI Settings > Add Application:
     - Full path: `C:\inetpub\wwwroot\flask-demo\arcgispro-py3-flask-demo\python.exe`
     - Arguments: `C:\inetpub\wwwroot\flask-demo\wfastcgi.py`
